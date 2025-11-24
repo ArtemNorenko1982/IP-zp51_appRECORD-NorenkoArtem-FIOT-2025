@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Page wrapper section -->
+    <div class="page-wrapper">
+
+        <!-- Top pannel -->
+        <header>
+            <div class="top-bar">
+                <div class="header-container">
+                    <h1 class="text">
+                        ЗВІТИ ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "Проєктування WEB-застосувань"
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Middle pannel -->
+            <div class="middle-bar">
+                <div class="header-container middle-row">
+                    <div class="author-text">
+                        Виконавець: Студент групи ІП-зп51 НОРЕНКО А. В.
+                    </div>
+                    <div class="author-image">
+                        <img src="src/pic1.jpg" alt="avatar" class="avatar">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main nav menu -->
+            <div class="bottom-bar">
+                <div class="header-container">
+                    <nav class="menu">
+                        <a href="index.html">Головна</a>
+                        <a href="lab01.html">Лабораторна 1</a>
+                        <a href="#">Лабораторна 2</a>
+                        <a href="#">Лабораторна 3</a>
+                        <a href="#">Лабораторна 4</a>
+                        <a href="#">Лабораторна 5</a>
+                        <a href="#">Лабораторна 6</a>
+                        <a href="#">Лабораторна 7</a>
+                        <a href="#">Лабораторна 8</a>
+                        <a href="#">Лабораторна 9</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page content -->
+        <div class="main-container">
+            <div class="content-section">
+
+                <!-- Left side bar -->
+                <div class="left-side">
+                    <aside>
+                        <nav class="left-nav">
+                            <ul>
+                                <li><a href="#" onclick="showTab('desc')">Опис</a></li>
+                                <li><a href="#" onclick="showTab('goal')">Мета</a></li>
+                                <li><a href="#" onclick="showTab('howto')">Як це працює?</a></li>
+                                <li><a href="#" onclick="showTab('about')">Про мене</a></li>
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+
+                <!-- Righ side bar -->
+                <div class="right-side">
+                    <div class="info" id="output">
+
+                        <!-- Page description -->
+                        <div id="desc" class="tab-content">
+                            <h2>Опис</h2>
+                            <p>Звіт виконання практичних лабораторних робіт з дисципліни "Проєктування WEB-застосувань".</p>
+                        </div>
+
+                        <div id="goal" class="tab-content" style="display:none;">
+                            <h2>Мета</h2>
+                            <p>Опанувати мову розмітки HTML, прикрасити сторінку за допомогою CSS та оживити з JS.</p>
+                        </div>
+
+                        <div id="howto" class="tab-content" style="display:none;">
+                            <h2>Як це працює</h2>
+                            <ul>
+                                <li>Обрати лабораторну роботу.</li>
+                                <li>Ознайомитись з описом та виконанням.</li>
+                                <li>Ознайомитись з результатами.</li>
+                            </ul>
+                        </div>
+
+                        <div id="about" class="tab-content" style="display:none;">
+                            <h2>Зв'язатись зі мною</h2>
+                            <p>Email: <a href="mailto:myemail@email.com">myemail@email.com</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/artem-norenko-70312010b">Артем Норенко</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2025 НОРЕНКО А. В. – Звіти лабораторних робіт з дисципліни "Проєктування WEB-застосувань"</p>
+                <p>Контакти: <a href="mailto:myemail@email.com">myemail@email.com</a></p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/scripts.js" defer></script>
+</body>
+
+</html>
