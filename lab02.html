@@ -1,0 +1,384 @@
+<DOCTYPE html>
+  <html lang="uk">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота 2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/01_scripts.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Page wrapper section -->
+    <div class="page-wrapper">
+      <!-- Top pannel -->
+      <header>
+        <div class="top-bar">
+          <div class="header-container">
+            <h1 class="text">
+              ЗВІТИ ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "Проєктування
+              WEB-застосувань"
+            </h1>
+          </div>
+        </div>
+
+        <!-- Middle pannel -->
+        <div class="middle-bar">
+          <div class="header-container middle-row">
+            <div class="author-text">
+              Виконавець: Студент групи ЗПІ-зп51 НОРЕНКО А. В.
+            </div>
+            <div class="author-image">
+              <img src="src/pic1.jpg" alt="avatar" class="avatar" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Main nav menu -->
+        <div class="bottom-bar">
+          <div class="header-container">
+            <nav class="menu">
+              <a href="index.html" data-tab="tab-content-main" onclick="navMenuClickItem(e)">Головна</a>
+              <a href="lab01.html" data-tab="tab-content-lab01" onclick="navMenuClickItem(e)">Лабораторна 1</a>
+              <a href="lab02.html" data-tab="tab-content-lab02" onclick="navMenuClickItem(e)">Лабораторна 2</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab03" onclick="navMenuClickItem(e)">Лабораторна 3</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab04" onclick="navMenuClickItem(e)">Лабораторна 4</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab05" onclick="navMenuClickItem(e)">Лабораторна 5</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab06" onclick="navMenuClickItem(e)">Лабораторна 6</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab07" onclick="navMenuClickItem(e)">Лабораторна 7</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab08" onclick="navMenuClickItem(e)">Лабораторна 8</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab09" onclick="navMenuClickItem(e)">Лабораторна 9</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page content -->
+      <div class="main-container">
+        <div class="content-section">
+          <!-- Left side bar -->
+          <div class="left-side">
+            <aside>
+              <nav class="left-nav">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-topic')" class="isActive">Тема, мета. та
+                      посилання</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-how-to')">Варіанти підключення стилів</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-sel-tag')">Селектор тегу</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-sel-class')">Селектор класу</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-sel-id')">Селектор ідентифікатора (id)</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-sel-more')">Більше про селектори</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-advance')">Додаткові можливості CSS</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('page-conclusion')">Висновки</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+          </div>
+
+          <!-- Righ side bar -->
+          <div class="right-side">
+            <div class="info" id="output">
+              <!-- Page description -->
+              <div id="page-topic" class="tab-content">
+                <h2>Тема, мета, посилання</h2>
+                <p>
+                  <span class="span-title-bold">Тема:</span> Стильове оформлення елементів в HTML. Каскадні таблиці
+                  стилів. Селектори.
+                </p>
+                <p>
+                  <span class="span-title-bold">Мета:</span> Опанувати на практиці основні способи підключення CSS до
+                  HTML-документу.
+                </p>
+                <p>
+                  <span class="span-title-bold">Посилання:</span>
+                <ul>
+                  <li> Репозиторій WEB-застосунку:
+                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appWEB-NorenkoArtem-FIOT-2025">Lord of Books
+                      (Букініст)</a>
+                  </li>
+                  <li> Жива сторінка WEB-застосунку:
+                    <a href="https://artemnorenko1982.github.io/IP-zp51_appWEB-NorenkoArtem-FIOT-2025/">Lord of Books
+                      (Букініст)</a>
+                  </li>
+                  <li> Репозиторій звітів:
+                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025">Звіт
+                      лабораторних робіт </a>
+                  </li>
+                  <li> Жива сторінка звітів:
+                    <a href="https://artemnorenko1982.github.io/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025/index.html">Звіт
+                      лабораторних робіт</a>
+                  </li>
+                </ul>
+                </p>
+              </div>
+
+              <div id="page-how-to" class="tab-content" style="display: none">
+                <h2>Варіанти підключення CSS до HTML-документу</h2>
+                <ol>
+                  <li class="span-title-bold">
+                    <h4>Варіант з підключенням зовнішнього файлу</h4>
+                    <pre class="code-style">
+                <code>
+                  &ltlink rel="stylesheet" href="style.css"> 
+                </code>
+                </pre>
+                  </li>
+                  <li class="span-title-bold">
+                    <h4>Варіант використання inline стилів</h4>
+                    <pre class="code-style">
+                <code>
+                  &ltdiv style="color: red;">Назва елементу&lt/div&gt
+                </code>
+                </pre>
+                  </li>
+                  <li class="span-title-bold">
+                    <h4>Внутрішні стилі html сторінки</h4>
+                    <pre class="code-style">
+                <code>
+                  &ltstyle&gt
+                    body {
+                      background-color: #f0f0f0;
+                    }
+                  &lt/style&gt
+                </code>
+                </pre>
+                  </li>
+                </ol>
+              </div>
+
+              <div id="page-sel-tag" class="tab-content" style="display: none">
+                <h2>Селектори тегів</h2>
+                <ol>
+                  <li>Селектор тегу застосовує стилі до всіх елементів певного типу.</li>
+                  <li>Синтаксис: назва_тегу { властивість: значення; }</li>
+                </ol>
+                <p><span class="span-title-bold">Приклад HTML-коду WEB-застосунку з використанням семантичних
+                    тегів:</span></p>
+                <pre class="code-style">
+                <code>
+                  &lthead&gt
+                    &ltmeta charset="utf-8" />
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1" />
+                    &lttitle>Мій перший веб-сайт&lt/title>
+                    &ltlink rel="stylesheet" href="css/styles.css" />
+                  &lt/head&gt
+                  
+                  &ltbody&gt
+                    &ltheader&gt
+                      &lth1&gtЛаскаво просимо на мій веб-сайт!&lt/h1&gt
+                    &lt/header&gt
+                    
+                    &ltnav&gt
+                      &ltul&gt
+                        &ltli&gt&lta href="#"&gtГоловна&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#"&gtПро мене&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#"&gtКонтакти&lt/a&gt&lt/li&gt
+                      &lt/ul&gt
+                    &lt/nav&gt
+                    
+                    &ltmain&gt
+                      &ltsection&gt
+                        &lth2&gtПро мене&lt/h2&gt
+                        &ltp&gtЦе мій перший веб-сайт, створений з використанням HTML та CSS.&lt/p&gt
+                      &lt/section&gt
+                    &lt/main&gt
+                    
+                    &ltfooter&gt
+                      &ltp&gtАвторські права © 2025&lt/p&gt
+                    &lt/footer&gt
+                  &lt/body&gt
+                </code>
+                </pre>
+                <p><span class="span-title-bold">Приклад з CSS</span></p>
+                <pre class="code-style">
+                <code>
+                  header {
+                    background-color: #4CAF50;
+                    color: white;
+                    text-align: center;
+                    padding: 10px 0;
+                  }
+                </code>
+                </pre>
+              </div>
+
+              <div id="page-sel-class" class="tab-content" style="display: none">
+                <h2>Селектори класів</h2>
+                <ol>
+                  <li>Селектор класу застосовує стилі до всіх елементів з певним класом.</li>
+                  <li>Синтаксис: .назва_класу { властивість: значення; }</li>
+                </ol>
+                <p><span class="span-title-bold">Приклад HTML-коду з використанням класів:</span></p>
+                <pre class="code-style">
+                <code>
+                  &ltdiv class="highlight"&gtЦей текст буде виділений.&lt/div&gt
+                  &ltp class="highlight"&gtЦей абзац також буде виділений.&lt/p&gt  
+                </code>
+                </pre>
+                <p><span class="span-title-bold">Приклад з CSS</span></p>
+                <pre class="code-style">
+                <code>
+                  .highlight {
+                    background-color: yellow;
+                    font-weight: bold;
+                  }
+                </code>
+                </pre>
+              </div>
+
+              <div id="page-sel-id" class="tab-content" style="display: none">
+                <h2>Селектори ID</h2>
+                <ol>
+                  <li>Селектор ID застосовує стилі до елемента з певним ID.</li>
+                  <li>Синтаксис: #назва_id { властивість: значення; }</li>
+                </ol>
+                <p><span class="span-title-bold">Приклад HTML-коду з використанням ID:</span></p>
+                <pre class="code-style">
+                <code>
+                  &ltdiv id="header"&gtЦе заголовок сторінки.&lt/div&gt
+                </code>
+                </pre>
+                <p><span class="span-title-bold">Приклад з CSS</span></p>
+                <pre class="code-style">
+                <code>
+                  #header {
+                    background-color: blue;
+                    color: white;
+                    padding: 15px;
+                    text-align: center;
+                  }
+                </code>
+                </pre>
+              </div>
+
+              <div id="page-sel-more" class="tab-content" style="display: none">
+                <h2>Інші селектори</h2>
+                <ol>
+                  <li>Селектор атрибуту: вибирає елементи з певним атрибутом.
+                    Синтаксис: [атрибут] { властивість: значення; }</li>
+                  <li>Комбіновані селектори: дозволяють поєднувати різні типи селекторів.
+                    Синтаксис: назва_тегу.клас { властивість: значення; }</li>
+                  <li>Псевдокласи: застосовують стилі до елементів у певному стані.
+                    Синтаксис: назва_тегу:hover { властивість: значення; }</li>
+                </ol>
+                <p><span class="span-title-bold">Приклад з CSS</span></p>
+                <pre class="code-style">
+                <code>
+                  /* Селектор атрибуту */
+                  a[target="_blank"] {
+                    color: red;
+                  }
+                  
+                  /* Комбінований селектор */
+                  p.intro {
+                    font-size: 18px;
+                    font-weight: bold;
+                  }
+                  
+                  /* Псевдоклас */
+                  button:hover {
+                    background-color: green;
+                    color: white;
+                  }
+                </code>
+                </pre>
+              </div>
+
+              <div id="page-advance" class="tab-content" style="display: none">
+                <h2>Advanced CSS</h2>
+                <ol>
+                  <li>Медіа-запити: дозволяють застосовувати різні стилі в залежності від розміру екрану.
+                    Синтаксис:
+                    @media (max-width: 600px) {
+                    назва_тегу { властивість: значення; }
+                    }</li>
+                  <li>Flexbox: забезпечує гнучке розташування елементів у контейнері.
+                    Синтаксис:
+                    .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    }</li>
+                  <li>CSS Grid: дозволяє створювати складні макети сторінок.
+                    Синтаксис:
+                    .grid-container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                    }</li>
+                </ol>
+                <p><span class="span-title-bold">Приклад з CSS</span></p>
+                <pre class="code-style">
+                <code>
+                  /* Медіа-запити */
+                  @media (max-width: 600px) {
+                    body {
+                      background-color: lightgray;
+                    }
+                  }
+                  
+                  /* Flexbox */
+                  .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+                  
+                  /* CSS Grid */
+                  .grid-container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                  }
+                </code>
+                </pre>
+              </div>
+
+              <div id="page-conclusion" class="tab-content" style="display: none">
+                <h2>Висновки</h2>
+                <p>
+                  В ході виконання лабораторної роботи було вивчено основні способи підключення CSS до HTML-документу,
+                  а також різні типи селекторів, які дозволяють ефективно застосовувати стилі до елементів веб-сторінки.
+                  Опановані знання допоможуть у створенні привабливих та функціональних веб-застосунків.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <p>
+            &copy; 2025 НОРЕНКО А. В. – Звіти лабораторних робіт з дисципліни
+            "Проєктування WEB-застосувань"
+          </p>
+          <p>
+            Контакти: <a href="mailto:norenko.artem@gmail.com">norenko.artem@gmail.com</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/scripts.js" defer></script>
+  </body>
+
+  </html>
+</DOCTYPE>

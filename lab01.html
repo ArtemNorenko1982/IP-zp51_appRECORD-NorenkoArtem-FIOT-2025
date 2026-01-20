@@ -1,154 +1,452 @@
 <DOCTYPE html>
   <html lang="uk">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Лабораторна робота 1</title>
-      <link rel="stylesheet" href="css/styles.css" />
-      <script src="js/01_scripts.js" defer></script>
-    </head>
-    <body>
-      <!-- Page wrapper section -->
-      <div class="page-wrapper">
-        <!-- Top pannel -->
-        <header>
-          <div class="top-bar">
-            <div class="header-container">
-              <h1 class="text">
-                ЗВІТИ ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "Проєктування
-                WEB-застосувань"
-              </h1>
-            </div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота 1</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/01_scripts.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Page wrapper section -->
+    <div class="page-wrapper">
+      <!-- Top pannel -->
+      <header>
+        <div class="top-bar">
+          <div class="header-container">
+            <h1 class="text">
+              ЗВІТИ ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "Проєктування
+              WEB-застосувань"
+            </h1>
           </div>
+        </div>
 
-          <!-- Middle pannel -->
-          <div class="middle-bar">
-            <div class="header-container middle-row">
-              <div class="author-text">
-                Виконавець: Студент групи ІП-зп51 НОРЕНКО А. В.
-              </div>
-              <div class="author-image">
-                <img src="src/pic1.jpg" alt="avatar" class="avatar" />
-              </div>
+        <!-- Middle pannel -->
+        <div class="middle-bar">
+          <div class="header-container middle-row">
+            <div class="author-text">
+              Виконавець: Студент групи ЗПІ-зп51 НОРЕНКО А. В.
             </div>
-          </div>
-
-          <!-- Main nav menu -->
-          <div class="bottom-bar">
-            <div class="header-container">
-              <nav class="menu">
-                <a href="index.html">Головна</a>
-                <a href="lab01.html">Лабораторна 1</a>
-                <a href="#">Лабораторна 2</a>
-                <a href="#">Лабораторна 3</a>
-                <a href="#">Лабораторна 4</a>
-                <a href="#">Лабораторна 5</a>
-                <a href="#">Лабораторна 6</a>
-                <a href="#">Лабораторна 7</a>
-                <a href="#">Лабораторна 8</a>
-                <a href="#">Лабораторна 9</a>
-              </nav>
-            </div>
-          </div>
-        </header>
-
-        <!-- Page content -->
-        <div class="main-container">
-          <div class="content-section">
-            <!-- Left side bar -->
-            <div class="left-side">
-              <aside>
-                <nav class="left-nav">
-                  <ul>
-                    <li><a href="#" onclick="showTab('topic')">Тема</a></li>
-                    <li><a href="#" onclick="showTab('goal')">Мета</a></li>
-                    <li>
-                      <a href="#" onclick="showTab('desc')"
-                        >Опис предметної області</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" onclick="showTab('requirements')">Вимоги</a>
-                    </li>
-                  </ul>
-                </nav>
-              </aside>
-            </div>
-
-            <!-- Righ side bar -->
-            <div class="right-side">
-              <div class="info" id="output">
-                <!-- Page description -->
-                <div id="topic" class="tab-content">
-                  <h2>Тема застосунку</h2>
-                  <p>
-                    Володар книг – веб-застосунок для обміну та перегляду книжок
-                    між користувачами.
-                  </p>
-                  <p>
-                    <a
-                      href="https://artemnorenko1982.github.io/IP-zp51_appWEB-NorenkoArtem-FIOT-2025/"
-                      >Lord of Books (Букініст)</a
-                    >
-                  </p>
-                </div>
-
-                <div id="goal" class="tab-content" style="display: none">
-                  <h2>Мета створення</h2>
-                  <p>
-                    Опанувати мову розмітки HTML, прикрасити сторінку за
-                    допомогою CSS та оживити з JS. Спонукати сучсних людей
-                    читати більше книг, створивши зручний веб-застосунок для
-                    обміну книжками
-                  </p>
-                </div>
-
-                <div id="desc" class="tab-content" style="display: none">
-                  <h2>Опис предметної області</h2>
-                  <p>
-                    Платформа забезпечечить користувачам можливістю
-                    реєструватися, створювати профілі, додавати книги до своїх
-                    віртуальних бібліотек, обмінюватися книгами з іншими
-                    користувачами та переглядати доступні книжки. Користувачі
-                    зможуть залишати відгуки та оцінки для книг, що сприятиме
-                    формуванню спільноти читачів.
-                  </p>
-                </div>
-
-                <div
-                  id="requirements"
-                  class="tab-content"
-                  style="display: none"
-                >
-                  <h2>Вимоги</h2>
-                  <ul>
-                    <li>Авторизація</li>
-                    <li>Каталог наявних книжок.</li>
-                    <li>Пошук книжок.</li>
-                    <li>Рейтинг книжок.</li>
-                    <li>Статистика обміну книжками.</li>
-                    <li>Можливість залишати відгуки та оцінки.</li>
-                  </ul>
-                </div>
-              </div>
+            <div class="author-image">
+              <img src="src/pic1.jpg" alt="avatar" class="avatar" />
             </div>
           </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-          <div class="footer-container">
-            <p>
-              &copy; 2025 НОРЕНКО А. В. – Звіти лабораторних робіт з дисципліни
-              "Проєктування WEB-застосувань"
-            </p>
-            <p>
-              Контакти: <a href="mailto:myemail@email.com">myemail@email.com</a>
-            </p>
+        <!-- Main nav menu -->
+        <div class="bottom-bar">
+          <div class="header-container">
+            <nav class="menu">
+              <a href="index.html" data-tab="tab-content-main" onclick="navMenuClickItem(e)">Головна</a>
+              <a href="lab01.html" data-tab="tab-content-lab01" onclick="navMenuClickItem(e)">Лабораторна 1</a>
+              <a href="lab02.html" data-tab="tab-content-lab02" onclick="navMenuClickItem(e)">Лабораторна 2</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab03" onclick="navMenuClickItem(e)">Лабораторна 3</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab04" onclick="navMenuClickItem(e)">Лабораторна 4</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab05" onclick="navMenuClickItem(e)">Лабораторна 5</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab06" onclick="navMenuClickItem(e)">Лабораторна 6</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab07" onclick="navMenuClickItem(e)">Лабораторна 7</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab08" onclick="navMenuClickItem(e)">Лабораторна 8</a>
+              <a href="javascript:void(0)" data-tab="tab-content-lab09" onclick="navMenuClickItem(e)">Лабораторна 9</a>
+            </nav>
           </div>
-        </footer>
+        </div>
+      </header>
+
+      <!-- Page content -->
+      <div class="main-container">
+        <div class="content-section">
+          <!-- Left side bar -->
+          <div class="left-side">
+            <aside>
+              <nav class="left-nav">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('topic')" class="isActive">Тема. Мета. Місце
+                      розташування сайту,
+                      звіту</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('desc')">Опис предметного середовища</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('structure')">Структура документа</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('html-code-img')">HTML-код зображень</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('html-code-list')">HTML-код списків</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('html-code-form')">HTML-код форм</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('html-code')">HTML-код</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('html-main-page')">Головна сторінка WEB-застосунку</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" onclick="showTab('html-main-page-code')">Код головної сторінки
+                      WEB-застосунку</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+          </div>
+
+          <!-- Righ side bar -->
+          <div class="right-side">
+            <div class="info" id="output">
+              <!-- Page description -->
+              <div id="topic" class="tab-content">
+                <h2>Тема, мета, посилання</h2>
+                <p>
+                  <span class="span-title-bold">Тема:</span> Теги та атрибути
+                  HTML-документа. Структурна розмітка. Git/GitHub. Робота з
+                  репозиторіями. Опис логіки власного WEB-застосунку.
+                </p>
+                <p>
+                  <span class="span-title-bold">Мета:</span> набути навички
+                  роботи з GitHub, репозиторіями, HTML-документом (таблиці,
+                  зображення, посилання, списки, форми) та створити шаблон
+                  звітного HTML-документа для всіх лабораторних робіт.
+                </p>
+                <p>
+                  <span class="span-title-bold">Посилання:</span>
+                <ul>
+                  <li> Репозиторій WEB-застосунку:
+                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appWEB-NorenkoArtem-FIOT-2025">Lord of Books
+                      (Букініст)</a>
+                  </li>
+                  <li> Жива сторінка WEB-застосунку:
+                    <a href="https://artemnorenko1982.github.io/IP-zp51_appWEB-NorenkoArtem-FIOT-2025/">Lord of Books
+                      (Букініст)</a>
+                  </li>
+                  <li> Репозиторій звітів:
+                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025">Звіт
+                      лабораторних робіт </a>
+                  </li>
+                  <li> Жива сторінка звітів:
+                    <a href="https://artemnorenko1982.github.io/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025/index.html">Звіт
+                      лабораторних робіт</a>
+                  </li>
+                </ul>
+                </p>
+              </div>
+
+              <div id="desc" class="tab-content" style="display: none">
+                <h2>Опис предметного середовища та бізнес-логіки</h2>
+                <ul>
+                  <li>
+                    <h4>Тема WEB-застосунку</h4>
+                    <p><span class="span-title-bold">Lord of Books (Букініст)</span></p>
+                    <p>
+                      В сучасному світі, де інформаційні технології стрімко розвиваються,
+                      обмін знаннями та ресурсами стає все більш важливим аспектом
+                      повсякденного життя. Однією з таких ресурсів є книги, які
+                      відіграють ключову роль у розвитку культури читання та освіти.
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Мета створення</h4>
+                    <p>
+                      Проєкт "Lord of Books" (Букініст) є веб-застосунком, який
+                      спрямований на створення онлайн-платформи для обміну книгами
+                      серед користувачів. Ідея полягає в тому, щоб надати людям
+                      можливість ділитися своїми улюбленими книжками, знаходити нові
+                      для читання та сприяти розвитку спільноти читачів.
+                    <p>
+                  </li>
+                  <li>
+                    <h4>Опис предметного середовища</h4>
+                    <p>
+                      Платформа забезпечечить користувачам можливістю
+                      реєструватися, створювати профілі, додавати книги до своїх
+                      віртуальних бібліотек, обмінюватися книгами з іншими
+                      користувачами та переглядати доступні книжки. Користувачі
+                      зможуть залишати відгуки та оцінки для книг, що сприятиме
+                      формуванню спільноти читачів.
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Функціональні вимоги</h4>
+                    <ul>
+                      <li>Авторизація</li>
+                      <li>Каталог наявних книжок.</li>
+                      <li>Пошук книжок.</li>
+                      <li>Рейтинг книжок.</li>
+                      <li>Статистика обміну книжками.</li>
+                      <li>Можливість залишати відгуки та оцінки.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>Нефункціональні вимоги</h4>
+                    <ul>
+                      <li>зручний інтерфейс</li>
+                      <li>швидкодія</li>
+                      <li>безпека даних користувачів</li>
+                      <li>масштабованість</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="structure" class="tab-content" style="display: none">
+                <h2>Структура html-документа (semantic design)</h2>
+                <pre class="code-style">
+                <code>
+                  &ltheader&gt
+                    &ltdiv class="header__logo">...&lt/div>
+                      &ltnav>...&lt/nav>
+                    &ltdiv class="auth">...&lt/div>
+                  &lt/header>
+                  
+                  &ltmain>
+                  
+                    &ltsection class="hero">...&lt/section>
+                  
+                    &ltsection class="exhibitions">
+                      &ltarticle>...&lt/article>
+                      &ltarticle>...&lt/article>
+                    &lt/section>
+                  
+                  &lt/main>
+                  
+                  &ltfooter>
+                    &ltsection class="footer__col">...&lt/section>
+                  &lt/footer>
+                </code>
+                </pre>
+                <p>
+                  Структура WEB-застосунку побудована з використанням семантичних HTML5-тегів
+                  &ltheader>, &ltnav>, &ltmain>, &ltsection>, &ltarticle> та &ltfooter>.
+                </p>
+                <p>
+                  У звітному HTML-документі додатково наведено приклади використання таблиць, зображень,
+                  маркованих списків та
+                  елементів форм.
+                </p>
+              </div>
+
+              <div id="html-code-img" class="tab-content" style="display: none">
+                <h2>HTML-код зображень</h2>
+                <pre class="code-style">
+                <code>
+                  &ltimg src="src/pic1.jpg" alt="avatar" class="avatar" /&gt
+                </code>
+                </pre>
+                <p>Пояснення атрибутів тега &ltimg&gt:</p>
+                <ul>
+                  <li>src - шлях до зображення</li>
+                  <li>alt - альтернативний текст для зображення</li>
+                  <li>class - клас для застосування стилів CSS</li>
+              </div>
+
+              <div id="html-code-list" class="tab-content" style="display: none">
+                <h2>HTML-код списків</h2>
+                <pre class="code-style">
+                <code>
+                  &ltul&gt
+                    &ltli&gtПерший елемент списку&lt/li&gt
+                    &ltli&gtДругий елемент списку&lt/li&gt
+                    &ltli&gtТретій елемент списку&lt/li&gt
+                  &lt/ul&gt
+                </code>
+                </pre>
+                <p>Пояснення тегів списку:</p>
+                <ul>
+                  <li>&ltul&gt - маркований список</li>
+                  <li>&ltli&gt - елемент списку</li>
+                </ul>
+              </div>
+
+              <div id="html-code-form" class="tab-content" style="display: none">
+                <h2>HTML-код форм</h2>
+                <pre class="code-style">
+                <code>
+                  &ltform action="/submit" method="post"&gt
+                    &ltlabel for="name"&gtІм'я:&lt/label&gt
+                    &ltinput type="text" id="name" name="name" /&gt
+                    &ltinput type="submit" value="Відправити" /&gt
+                  &lt/form&gt
+                </code>
+                </pre>
+                <p>Пояснення тегів форми:</p>
+                <ul>
+                  <li>&ltform&gt - контейнер для елементів форми</li>
+                  <li>&ltlabel&gt - мітка для елемента форми</li>
+                  <li>&ltinput&gt - елемент введення даних</li>
+                </ul>
+              </div>
+
+              <div id="html-code" class="tab-content" style="display: none">
+                <h2>HTML-код</h2>
+                <p>Код фрагменту головної сторінки WEB-застосунку:</p>
+                <pre class="code-style">
+                <code>
+                  &lt!DOCTYPE html>
+                  &lthtml lang="ru">
+                  
+                  &lthead>
+                    &ltmeta charset="utf-8" />
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1" />
+                    &lttitle>Букініст - Володар книжок. Зручний сервіс обміну книжками&lt/title>
+                    &ltlink rel="stylesheet" href="css/styles.css" />
+                  &lt/head>
+                  
+                  &ltbody>
+                    &ltdiv class="app">
+                      &ltaside class="sidebar" id="sidebar">
+                        &ltdiv class="brand">
+                          &ltdiv class="logo">LB&lt/div>
+                          &ltdiv>
+                            &ltdiv style="font-weight: 800">Букініст&lt/div>
+                            &ltdiv style="font-size: 12px; color: var(--muted)">Обмін книжок&lt/div>
+                          &lt/div>
+                        &lt/div>
+                  
+                        &ltnav class="nav" id="nav">
+                          &lta href="#stats" data-target="stats" class="active">📊 Статистика&lt/a>
+                          &lta href="#library" data-target="library">📚 Бібліотека&lt/a>
+                          &lta href="#cabinet" data-target="cabinet">👤 Кабінет&lt/a>
+                          &lta href="#rating" data-target="rating">⭐ Рейтинг&lt/a>
+                        &lt/nav>
+                  
+                        &ltdiv style="margin-top: auto; font-size: 13px; color: var(--muted-2)">
+                          Демо версія • 2025
+                        &lt/div>
+                      &lt/aside>
+                  
+                      &ltdiv class="content" style="flex: 1">
+                        &ltdiv class="topbar card">
+                          &ltdiv style="display: flex; align-items: center; gap: 12px">
+                            &ltdiv class="hamburger" id="hamburger" aria-label="Toggle menu">
+                              ☰
+                            &lt/div>
+                            &ltdiv class="title">
+                              Lord of Books (Букініст) — платформа обміну книжками
+                            &lt/div>
+                          &lt/div>
+                          &ltdiv style="display: flex; gap: 10px; align-items: center">
+                            &ltinput id="search" placeholder="Пошук" style="
+                                  padding: 8px 10px;
+                                  border-radius: 8px;
+                                  border: 1px solid var(--border);
+                                  background: transparent;
+                                " />
+                            &ltbutton id="to-cabinet" style="
+                                  padding: 8px 12px;
+                                  border-radius: 8px;
+                                  border: 1px solid var(--border);
+                                  background: white;
+                                  cursor: pointer;
+                                ">
+                              Мій кабінет
+                            &lt/button>
+                          &lt/div>
+                        &lt/div>
+                  
+                        &ltmain class="main">
+                        ...
+                          <!-- Main content goes here -->
+                </code>
+                </p>
+              </div>
+
+              <div id="html-main-page" class="tab-content" style="display: none">
+                <h2>Головна сторінка WEB-застосунку</h2>
+                <img src="src/main_page.jpg" alt="">
+            </div>
+
+              <div id="html-main-page-code" class="tab-content" style="display: none">
+                <h2>Код головної сторінки WEB-застосунку</h2>
+                <pre class="code-style">
+                <code>  
+                  &lt!DOCTYPE html>
+                  &lthtml lang="ru">
+                  
+                  &lthead>
+                    &ltmeta charset="utf-8" />
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1" />
+                    &lttitle>Букініст - Володар книжок. Зручний сервіс обміну книжками&lt/title>
+                    &ltlink rel="stylesheet" href="css/styles.css" />
+                  &lt/head>
+                  
+                  &ltbody>
+                    &ltdiv class="app">
+                      &ltaside class="sidebar" id="sidebar">
+                        &ltdiv class="brand">
+                          &ltdiv class="logo">LB&lt/div>
+                          &ltdiv>
+                            &ltdiv style="font-weight: 800">Букініст&lt/div>
+                            &ltdiv style="font-size: 12px; color: var(--muted)">Обмін книжок&lt/div>
+                          &lt/div>
+                        &lt/div>
+                  
+                        &ltnav class="nav" id="nav">
+                          &lta href="#stats" data-target="stats" class="active">📊 Статистика&lt/a>
+                          &lta href="#library" data-target="library">📚 Бібліотека&lt/a>
+                          &lta href="#cabinet" data-target="cabinet">👤 Кабінет&lt/a>
+                          &lta href="#rating" data-target="rating">⭐ Рейтинг&lt/a>
+                        &lt/nav>
+                  
+                        &ltdiv style="margin-top: auto; font-size: 13px; color: var(--muted-2)">
+                          Демо версія • 2025
+                        &lt/div>
+                      &lt/aside>
+                  
+                      &ltdiv class="content" style="flex: 1">
+                        &ltdiv class="topbar card">
+                          &ltdiv style="display: flex; align-items: center; gap: 12px">
+                            &ltdiv class="hamburger" id="hamburger" aria-label="Toggle menu">
+                              ☰
+                            &lt/div>
+                            &ltdiv class="title">
+                              Lord of Books (Букініст) — платформа обміну книжками
+                            &lt/div>
+                          &lt/div>
+                          &ltdiv style="display: flex; gap: 10px; align-items: center">
+                            &ltinput id="search" placeholder="Пошук" style="
+                                  padding: 8px 10px;
+                                  border-radius: 8px;
+                                  border: 1px solid var(--border);
+                                  background: transparent;
+                                " />
+                            &ltbutton id="to-cabinet" style="
+                                  padding: 8px 12px;
+                                  border-radius: 8px;
+                                  border: 1px solid var(--border);
+                                  background: white;
+                                  cursor: pointer;
+                                ">
+                              Мій кабінет
+                            &lt/button>
+                </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <script src="js/scripts.js" defer></script>
-    </body>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <p>
+            &copy; 2025 НОРЕНКО А. В. – Звіти лабораторних робіт з дисципліни
+            "Проєктування WEB-застосувань"
+          </p>
+          <p>
+            Контакти: <a href="mailto:norenko.artem@gmail.com">norenko.artem@gmail.com</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/scripts.js" defer></script>
+  </body>
+
   </html>
 </DOCTYPE>

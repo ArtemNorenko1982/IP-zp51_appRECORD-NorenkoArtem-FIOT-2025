@@ -1,18 +1,37 @@
 /*general styles*/
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0px;
   background-color: rgb(184, 183, 183); /*#282c34;*/
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
 }
 
+.main-container {
+  flex: 1;
+  padding-top: 0px; /*height of header*/
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 /*top bar styles*/
 .top-bar {
   background-color: #2c2f33;
@@ -56,7 +75,9 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid #616262;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /*bottom bar styles*/
@@ -71,10 +92,9 @@ body {
 .menu a {
   color: rgb(248, 248, 248);
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0;
   font-size: 16px;
   padding: 15px;
-  margin: 0;
   font-weight: 600;
   display: inline-block;
 }
@@ -82,6 +102,13 @@ body {
 .menu a:hover {
   background-color: white;
   color: black;
+}
+
+.menu a.isActive {
+  background-color: white;
+  color: black;
+
+  /* box-shadow: #424547 2px 2px 8px; */
 }
 
 .content-section {
@@ -125,6 +152,12 @@ body {
   box-shadow: #616262 2px 2px 8px;
 }
 
+.left-nav a.isActive {
+  background-color: #616262;
+  color: white;
+  box-shadow: #424547 2px 2px 8px;
+}
+
 /*right side content styles*/
 .right-side {
   margin: 15px 0px 15px 0px;
@@ -140,6 +173,19 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.span-title-bold {
+  font-weight: 700;
+}
+
+.code-style {
+  background-color: #e0e0e0;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  overflow-x: auto;
 }
 
 /*footer styles*/
