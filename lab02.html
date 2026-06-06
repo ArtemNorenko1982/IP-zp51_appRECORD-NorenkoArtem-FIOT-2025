@@ -39,16 +39,13 @@
         <div class="bottom-bar">
           <div class="header-container">
             <nav class="menu">
-              <a href="index.html" data-tab="tab-content-main" onclick="navMenuClickItem(e)">Головна</a>
-              <a href="lab01.html" data-tab="tab-content-lab01" onclick="navMenuClickItem(e)">Лабораторна 1</a>
-              <a href="lab02.html" data-tab="tab-content-lab02" onclick="navMenuClickItem(e)">Лабораторна 2</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab03" onclick="navMenuClickItem(e)">Лабораторна 3</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab04" onclick="navMenuClickItem(e)">Лабораторна 4</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab05" onclick="navMenuClickItem(e)">Лабораторна 5</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab06" onclick="navMenuClickItem(e)">Лабораторна 6</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab07" onclick="navMenuClickItem(e)">Лабораторна 7</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab08" onclick="navMenuClickItem(e)">Лабораторна 8</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab09" onclick="navMenuClickItem(e)">Лабораторна 9</a>
+              <a href="index.html">Головна</a>
+              <a href="lab01.html">Лабораторна 1</a>
+              <a href="lab02.html" class="isActive">Лабораторна 2</a>
+              <a href="lab04.html">Лабораторна 4</a>
+              <a href="lab05.html">Лабораторна 5</a>
+              <a href="lab06.html">Лабораторна 6</a>
+              <a href="lab07.html">Лабораторна 7</a>
             </nav>
           </div>
         </div>
@@ -63,8 +60,7 @@
               <nav class="left-nav">
                 <ul>
                   <li>
-                    <a href="javascript:void(0)" onclick="showTab('page-topic')" class="isActive">Тема, мета. та
-                      посилання</a>
+                    <a href="javascript:void(0)" onclick="showTab('page-topic')" class="isActive">Тема та мета</a>
                   </li>
                   <li>
                     <a href="javascript:void(0)" onclick="showTab('page-how-to')">Варіанти підключення стилів</a>
@@ -96,38 +92,12 @@
           <div class="right-side">
             <div class="info" id="output">
               <!-- Page description -->
-              <div id="page-topic" class="tab-content">
-                <h2>Тема, мета, посилання</h2>
-                <p>
-                  <span class="span-title-bold">Тема:</span> Стильове оформлення елементів в HTML. Каскадні таблиці
-                  стилів. Селектори.
-                </p>
-                <p>
-                  <span class="span-title-bold">Мета:</span> Опанувати на практиці основні способи підключення CSS до
-                  HTML-документу.
-                </p>
-                <p>
-                  <span class="span-title-bold">Посилання:</span>
-                <ul>
-                  <li> Репозиторій WEB-застосунку:
-                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appWEB-NorenkoArtem-FIOT-2025">Lord of Books
-                      (Букініст)</a>
-                  </li>
-                  <li> Жива сторінка WEB-застосунку:
-                    <a href="https://artemnorenko1982.github.io/IP-zp51_appWEB-NorenkoArtem-FIOT-2025/">Lord of Books
-                      (Букініст)</a>
-                  </li>
-                  <li> Репозиторій звітів:
-                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025">Звіт
-                      лабораторних робіт </a>
-                  </li>
-                  <li> Жива сторінка звітів:
-                    <a href="https://artemnorenko1982.github.io/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025/index.html">Звіт
-                      лабораторних робіт</a>
-                  </li>
-                </ul>
-                </p>
-              </div>
+              <section id="page-topic" class="tab-content">
+                <h2>Тема та мета лабораторної роботи №2</h2>
+                <p><span class="span-title-bold">Тема:</span> Каскадні таблиці стилів CSS: способи підключення стилів, селектори тегів, класів та ідентифікаторів, групування селекторів і додаткові можливості оформлення.</p>
+                <p><span class="span-title-bold">Мета:</span> Навчитися підключати CSS до HTML-документа, застосовувати різні види селекторів та створювати узгоджене стильове оформлення елементів WEB-сторінки.</p>
+                <p>У роботі досліджено зовнішні, внутрішні та вбудовані стилі, наведено приклади основних CSS-селекторів і продемонстровано їх використання у WEB-застосунку.</p>
+              </section>
 
               <div id="page-how-to" class="tab-content" style="display: none">
                 <h2>Варіанти підключення CSS до HTML-документу</h2>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторна робота 7</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="top-bar"><div class="header-container"><h1 class="text">ЗВІТИ ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "Проєктування WEB-застосувань"</h1></div></div>
+      <div class="middle-bar"><div class="header-container middle-row"><div class="author-text">Виконавець: Студент групи ЗПІ-зп51 НОРЕНКО А. В.</div><div class="author-image"><img src="src/pic1.jpg" alt="Фото виконавця" class="avatar" /></div></div></div>
+      <div class="bottom-bar"><div class="header-container"><nav class="menu">
+  <a href="index.html">Головна</a>
+  <a href="lab01.html">Лабораторна 1</a>
+  <a href="lab02.html">Лабораторна 2</a>
+  <a href="lab04.html">Лабораторна 4</a>
+  <a href="lab05.html">Лабораторна 5</a>
+  <a href="lab06.html">Лабораторна 6</a>
+  <a href="lab07.html" class="isActive">Лабораторна 7</a>
+</nav></div></div>
+    </header>
+
+    <main class="main-container">
+      <div class="content-section">
+        <div class="left-side"><aside><nav class="left-nav"><ul>
+          <li><a href="javascript:void(0)" onclick="showTab('page-topic')" class="isActive">Тема та мета</a></li>
+          <li><a href="javascript:void(0)" onclick="showTab('task-timer')">1. Таймер</a></li>
+          <li><a href="javascript:void(0)" onclick="showTab('task-form')">2. Форма</a></li>
+          <li><a href="javascript:void(0)" onclick="showTab('task-promises')">3. Проміси</a></li>
+          <li><a href="javascript:void(0)" onclick="showTab('task-gallery')">4. Галерея</a></li>
+          <li><a href="javascript:void(0)" onclick="showTab('task-search')">5. Пошук зображень</a></li>
+          <li><a href="javascript:void(0)" onclick="showTab('page-conclusion')">Висновки</a></li>
+        </ul></nav></aside></div>
+
+        <div class="right-side"><div class="info" id="output">
+          <section id="page-topic" class="tab-content">
+            <h2>Лабораторна робота №7</h2>
+            <p><span class="span-title-bold">Тема:</span> МОДУЛЬНОСТЬ КОДУ. NODE.JS. JSON. WEB STORAGE API. АСИНХРОННІСТЬ. ПРОМІСИ. HTTP-ЗАПИТИ. REST API. AJAX. КРОСДОМЕННІ ЗАПИТИ. ПАГІНАЦІЯ. CRUD.</p>
+            <p><span class="span-title-bold">Мета:</span> опанувати збереження стану у Web Storage, асинхронні операції та Promise, створення галереї, модального перегляду, пошуку даних і пагінації.</p>
+            <div class="explanation-card"><h3>Структура рішення</h3><p>Робота складається з п’яти окремих інтерактивних модулів. Форма використовує <code>localStorage</code>; таймер і генератор повідомлень демонструють асинхронність; галерея створюється з JSON-подібного масиву; пошук імітує REST-запит через Promise, loader та пагінацію.</p></div>
+          </section>
+
+          <section id="task-timer" class="tab-content" style="display:none">
+            <h2>Завдання 1. Таймер зворотного відліку</h2>
+            <div class="explanation-card"><h3>Пояснення</h3><p>Користувач обирає майбутню дату. Після запуску <code>setInterval()</code> щосекунди обчислює різницю між кінцевою і поточною датою. Значення форматуються через <code>padStart()</code>. Під час відліку елементи керування заблоковані.</p></div>
+            <div class="lab07-panel">
+              <div class="lab07-actions"><input id="timer-picker" class="lab-input" type="datetime-local" /><button id="timer-start" class="task-run-button" type="button" disabled>Start</button></div>
+              <div class="lab07-timer">
+                <div><span data-days>00</span><small>Days</small></div><div><span data-hours>00</span><small>Hours</small></div><div><span data-minutes>00</span><small>Minutes</small></div><div><span data-seconds>00</span><small>Seconds</small></div>
+              </div>
+              <p id="timer-status" class="demo-status">Оберіть дату в майбутньому.</p>
+            </div>
+            <p class="task-file">Файл: <code>js/lab07_timer.js</code></p>
+          </section>
+
+          <section id="task-form" class="tab-content" style="display:none">
+            <h2>Завдання 2. Форма зворотного зв’язку та Web Storage API</h2>
+            <div class="explanation-card"><h3>Пояснення</h3><p>Подія <code>input</code> делегована формі. Актуальні значення зберігаються в <code>localStorage</code> під ключем <code>feedback-form-state</code> і відновлюються після перезавантаження. Успішний submit очищає форму та сховище.</p></div>
+            <form class="feedback-form lab07-panel" autocomplete="off">
+              <label class="lab-input-label">Email<input class="lab-input" type="email" name="email" /></label>
+              <label class="lab-input-label">Message<textarea class="lab-input lab07-textarea" name="message" rows="7"></textarea></label>
+              <button class="task-run-button" type="submit">Submit</button>
+              <pre id="feedback-result" class="lab-result">Дані ще не відправлено.</pre>
+            </form>
+            <p class="task-file">Файл: <code>js/lab07_form.js</code></p>
+          </section>
+
+          <section id="task-promises" class="tab-content" style="display:none">
+            <h2>Завдання 3. Генератор промісів</h2>
+            <div class="explanation-card"><h3>Пояснення</h3><p>Після submit створюється <code>Promise</code>. Через задану затримку він переходить у стан fulfilled або rejected. Методи <code>then()</code>, <code>catch()</code> та <code>finally()</code> обробляють результат і показують повідомлення.</p></div>
+            <form class="promise-form lab07-panel">
+              <label class="lab-input-label">Delay (ms)<input class="lab-input" type="number" name="delay" min="0" required /></label>
+              <fieldset class="lab07-fieldset"><legend>State</legend><label><input type="radio" name="state" value="fulfilled" required /> Fulfilled</label><label><input type="radio" name="state" value="rejected" required /> Rejected</label></fieldset>
+              <button class="task-run-button" type="submit">Create notification</button>
+              <p id="promise-status" class="demo-status">Очікується створення промісу.</p>
+            </form>
+            <p class="task-file">Файл: <code>js/lab07_promises.js</code></p>
+          </section>
+
+          <section id="task-gallery" class="tab-content" style="display:none">
+            <h2>Завдання 4. Галерея активного відпочинку на роликах</h2>
+            <div class="explanation-card"><h3>Пояснення</h3><p>Розмітка карток генерується в JavaScript із масиву об’єктів. Єдиний обробник кліку встановлено на контейнері галереї, тобто використовується делегування. Клік по зображенню відкриває велику версію у власному модальному вікні.</p></div>
+            <ul class="roller-gallery"></ul>
+            <p class="task-file">Файл: <code>js/lab07_gallery.js</code></p>
+          </section>
+
+          <section id="task-search" class="tab-content" style="display:none">
+            <h2>Завдання 5. Асинхронний пошук зображень і пагінація</h2>
+            <div class="explanation-card"><h3>Пояснення</h3><p>Форма надсилає пошуковий запит до локального каталогу через асинхронну функцію, яка повертає Promise аналогічно REST API. Під час очікування показується loader. Результати розбиваються на сторінки, а кнопки пагінації перемикають поточну сторінку.</p></div>
+            <form class="image-search-form lab07-actions"><input class="lab-input" type="search" name="query" placeholder="Спробуйте: ролики, парк, друзі" /><button class="task-run-button" type="submit">Пошук</button></form>
+            <div id="search-loader" class="lab07-loader" hidden></div>
+            <p id="search-status" class="demo-status">Введіть пошуковий запит. Наприклад: ролики, парк, друзі або скейтпарк.</p>
+            <ul class="search-gallery"></ul>
+            <div class="search-pagination"></div>
+            <p class="task-file">Файл: <code>js/lab07_search.js</code></p>
+          </section>
+
+          <section id="page-conclusion" class="tab-content" style="display:none"><h2>Висновки</h2><p>У лабораторній роботі реалізовано збереження стану у <code>localStorage</code>, асинхронні таймери, Promise, динамічну галерею, модальне вікно, пошук, loader і пагінацію. Кожний функціональний блок винесено в окремий JavaScript-модуль.</p></section>
+        </div></div>
+      </div>
+    </main>
+
+    <div id="lab07-toast" class="lab07-toast" hidden></div>
+    <div id="gallery-modal" class="gallery-modal" hidden><button type="button" class="gallery-modal-close" aria-label="Закрити">×</button><figure><img src="" alt="" /><figcaption></figcaption></figure></div>
+    <footer class="footer"><div class="footer-container"><p>&copy; 2026 НОРЕНКО А. В. – Звіти лабораторних робіт</p><p>Контакти: <a href="mailto:norenko.artem@gmail.com">norenko.artem@gmail.com</a></p></div></footer>
+  </div>
+  <script src="js/scripts.js" defer></script><script src="js/lab07_timer.js" defer></script><script src="js/lab07_form.js" defer></script><script src="js/lab07_promises.js" defer></script><script src="js/lab07_gallery.js" defer></script><script src="js/lab07_search.js" defer></script>
+</body>
+</html>

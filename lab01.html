@@ -39,16 +39,13 @@
         <div class="bottom-bar">
           <div class="header-container">
             <nav class="menu">
-              <a href="index.html" data-tab="tab-content-main" onclick="navMenuClickItem(e)">Головна</a>
-              <a href="lab01.html" data-tab="tab-content-lab01" onclick="navMenuClickItem(e)">Лабораторна 1</a>
-              <a href="lab02.html" data-tab="tab-content-lab02" onclick="navMenuClickItem(e)">Лабораторна 2</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab03" onclick="navMenuClickItem(e)">Лабораторна 3</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab04" onclick="navMenuClickItem(e)">Лабораторна 4</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab05" onclick="navMenuClickItem(e)">Лабораторна 5</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab06" onclick="navMenuClickItem(e)">Лабораторна 6</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab07" onclick="navMenuClickItem(e)">Лабораторна 7</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab08" onclick="navMenuClickItem(e)">Лабораторна 8</a>
-              <a href="javascript:void(0)" data-tab="tab-content-lab09" onclick="navMenuClickItem(e)">Лабораторна 9</a>
+              <a href="index.html">Головна</a>
+              <a href="lab01.html" class="isActive">Лабораторна 1</a>
+              <a href="lab02.html">Лабораторна 2</a>
+              <a href="lab04.html">Лабораторна 4</a>
+              <a href="lab05.html">Лабораторна 5</a>
+              <a href="lab06.html">Лабораторна 6</a>
+              <a href="lab07.html">Лабораторна 7</a>
             </nav>
           </div>
         </div>
@@ -63,9 +60,7 @@
               <nav class="left-nav">
                 <ul>
                   <li>
-                    <a href="javascript:void(0)" onclick="showTab('topic')" class="isActive">Тема. Мета. Місце
-                      розташування сайту,
-                      звіту</a>
+                    <a href="javascript:void(0)" onclick="showTab('topic')" class="isActive">Тема та мета</a>
                   </li>
                   <li>
                     <a href="javascript:void(0)" onclick="showTab('desc')">Опис предметного середовища</a>
@@ -101,41 +96,12 @@
           <div class="right-side">
             <div class="info" id="output">
               <!-- Page description -->
-              <div id="topic" class="tab-content">
-                <h2>Тема, мета, посилання</h2>
-                <p>
-                  <span class="span-title-bold">Тема:</span> Теги та атрибути
-                  HTML-документа. Структурна розмітка. Git/GitHub. Робота з
-                  репозиторіями. Опис логіки власного WEB-застосунку.
-                </p>
-                <p>
-                  <span class="span-title-bold">Мета:</span> набути навички
-                  роботи з GitHub, репозиторіями, HTML-документом (таблиці,
-                  зображення, посилання, списки, форми) та створити шаблон
-                  звітного HTML-документа для всіх лабораторних робіт.
-                </p>
-                <p>
-                  <span class="span-title-bold">Посилання:</span>
-                <ul>
-                  <li> Репозиторій WEB-застосунку:
-                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appWEB-NorenkoArtem-FIOT-2025">Lord of Books
-                      (Букініст)</a>
-                  </li>
-                  <li> Жива сторінка WEB-застосунку:
-                    <a href="https://artemnorenko1982.github.io/IP-zp51_appWEB-NorenkoArtem-FIOT-2025/">Lord of Books
-                      (Букініст)</a>
-                  </li>
-                  <li> Репозиторій звітів:
-                    <a href="https://github.com/ArtemNorenko1982/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025">Звіт
-                      лабораторних робіт </a>
-                  </li>
-                  <li> Жива сторінка звітів:
-                    <a href="https://artemnorenko1982.github.io/IP-zp51_appRECORD-NorenkoArtem-FIOT-2025/index.html">Звіт
-                      лабораторних робіт</a>
-                  </li>
-                </ul>
-                </p>
-              </div>
+              <section id="topic" class="tab-content">
+                <h2>Тема та мета лабораторної роботи №1</h2>
+                <p><span class="span-title-bold">Тема:</span> Структура HTML-документа та створення інформаційного WEB-застосунку: теги, атрибути, зображення, списки, форми, посилання та робота з Git/GitHub.</p>
+                <p><span class="span-title-bold">Мета:</span> Навчитися створювати семантичну структуру HTML-сторінки, використовувати основні елементи розмітки та організовувати роботу з кодом у репозиторії GitHub.</p>
+                <p>У роботі розроблено структуру WEB-застосунку «Lord of Books (Букініст)», описано його предметне середовище та наведено приклади HTML-коду основних елементів сторінки.</p>
+              </section>
 
               <div id="desc" class="tab-content" style="display: none">
                 <h2>Опис предметного середовища та бізнес-логіки</h2>

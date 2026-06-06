@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторна робота 5</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="top-bar">
+        <div class="header-container">
+          <h1 class="text">ЗВІТИ ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "Проєктування WEB-застосувань"</h1>
+        </div>
+      </div>
+
+      <div class="middle-bar">
+        <div class="header-container middle-row">
+          <div class="author-text">Виконавець: Студент групи ЗПІ-зп51 НОРЕНКО А. В.</div>
+          <div class="author-image">
+            <img src="src/pic1.jpg" alt="Фото виконавця" class="avatar" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <div class="header-container">
+          <nav class="menu">
+            <a href="index.html">Головна</a>
+            <a href="lab01.html">Лабораторна 1</a>
+            <a href="lab02.html">Лабораторна 2</a>
+            <a href="lab04.html">Лабораторна 4</a>
+            <a href="lab05.html" class="isActive">Лабораторна 5</a>
+            <a href="lab06.html">Лабораторна 6</a>
+            <a href="lab07.html">Лабораторна 7</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="content-section">
+        <div class="left-side">
+          <aside>
+            <nav class="left-nav">
+              <ul>
+                <li><a href="javascript:void(0)" onclick="showTab('page-topic')" class="isActive">Тема та мета</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-01')">1. Колбеки та товар</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-02')">2. Медикаменти</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-03')">3. Знижка на фрукти</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-04')">4. Клас Client</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-05')">5. Кількість тегів</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-06')">6. Перевірка дужок</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-07')">7. Об’єднання values</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-08')">8. Парність чисел</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-09')">9. Сортування рядків</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-10')">10. Клас Calculator</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('page-conclusion')">Висновки</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+
+        <div class="right-side">
+          <div class="info" id="output">
+            <section id="page-topic" class="tab-content">
+              <h2>Тема та мета лабораторної роботи №5</h2>
+              <p><span class="span-title-bold">Тема:</span> Функціональне програмування та об’єктно-орієнтований JavaScript.</p>
+              <p><span class="span-title-bold">Мета:</span> Навчитися застосовувати колбеки, стрілочні функції, методи масивів, класи, приватні властивості, геттери, сеттери та ланцюжкові виклики методів.</p>
+              <p>Завдання з документа <code>5.docx</code> поділено на 10 окремих програм. Натискання кнопки запускає демонстрацію та виводить результат на сторінку і в Console браузера.</p>
+            </section>
+
+            <section id="task-01" class="tab-content" style="display: none">
+              <h2>Завдання 1. Створення товару та колбеки</h2>
+              <p>Функція <code>createProduct(obj, callback)</code> створює товар з унікальним <code>id</code> і передає його колбеку. Колбеки <code>logProduct</code> та <code>logTotalPrice</code> виводять товар і його загальну вартість.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task01()">Запустити завдання</button>
+              <pre id="lab05-result-01" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task01.js</code></p>
+            </section>
+
+            <section id="task-02" class="tab-content" style="display: none">
+              <h2>Завдання 2. Фільтрація медикаментів</h2>
+              <p>За допомогою стрілочних функцій отримати назви не прострочених препаратів та відсортувати їх за строком зберігання у хронологічному порядку.</p>
+              <div class="credential-note">Перевірка виконується відносно поточної дати, тому препарати з минулим строком не потрапляють до результату.</div>
+              <button class="task-run-button" type="button" onclick="runLab05Task02()">Запустити завдання</button>
+              <pre id="lab05-result-02" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task02.js</code></p>
+            </section>
+
+            <section id="task-03" class="tab-content" style="display: none">
+              <h2>Завдання 3. Знижка 20% на фрукти</h2>
+              <p>Функція приймає масив об’єктів, повертає новий масив, додає кожному продукту <code>id</code> і зменшує ціну на 20%.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task03()">Запустити завдання</button>
+              <pre id="lab05-result-03" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task03.js</code></p>
+            </section>
+
+            <section id="task-04" class="tab-content" style="display: none">
+              <h2>Завдання 4. Клас Client</h2>
+              <p>Клас <code>Client</code> зберігає приватні властивості <code>#login</code> і <code>#email</code>. Доступ до них виконується через геттери та сеттери.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task04()">Запустити завдання</button>
+              <pre id="lab05-result-04" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task04.js</code></p>
+            </section>
+
+            <section id="task-05" class="tab-content" style="display: none">
+              <h2>Завдання 5. Підрахунок тегів</h2>
+              <p>Обробити масив твітів і повернути об’єкт, у якому для кожного тегу вказано кількість його використань.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task05()">Запустити завдання</button>
+              <pre id="lab05-result-05" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task05.js</code></p>
+            </section>
+
+            <section id="task-06" class="tab-content" style="display: none">
+              <h2>Завдання 6. Перевірка правильності дужок</h2>
+              <p>Функція <code>checkBrackets(str)</code> перевіряє правильність закриття круглих, фігурних і квадратних дужок у рядку JavaScript-коду.</p>
+              <label class="lab-input-label">Рядок для перевірки
+                <input id="brackets-input" class="lab-input" type="text" value="function test() { return [1, 2, 3]; }" />
+              </label>
+              <button class="task-run-button" type="button" onclick="runLab05Task06()">Перевірити дужки</button>
+              <pre id="lab05-result-06" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task06.js</code></p>
+            </section>
+
+            <section id="task-07" class="tab-content" style="display: none">
+              <h2>Завдання 7. Об’єднання масивів values</h2>
+              <p>Створити новий масив, що містить усі значення з властивостей <code>values</code> кожного об’єкта.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task07()">Запустити завдання</button>
+              <pre id="lab05-result-07" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task07.js</code></p>
+            </section>
+
+            <section id="task-08" class="tab-content" style="display: none">
+              <h2>Завдання 8. Перевірка парності чисел</h2>
+              <p>Перевірити методом <code>every()</code>, чи є кожен елемент масиву <code>[2, 4, 6, 8, 10]</code> парним.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task08()">Запустити завдання</button>
+              <pre id="lab05-result-08" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task08.js</code></p>
+            </section>
+
+            <section id="task-09" class="tab-content" style="display: none">
+              <h2>Завдання 9. Алфавітне сортування</h2>
+              <p>Відсортувати масив рядків <code>["banana", "orange", "apple", "pear"]</code> за алфавітом, не змінюючи початковий масив.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task09()">Запустити завдання</button>
+              <pre id="lab05-result-09" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task09.js</code></p>
+            </section>
+
+            <section id="task-10" class="tab-content" style="display: none">
+              <h2>Завдання 10. Клас Calculator</h2>
+              <p>Клас підтримує арифметичні операції та ланцюжкові виклики: <code>number()</code>, <code>add()</code>, <code>subtract()</code>, <code>multiply()</code>, <code>divide()</code> і <code>getResult()</code>.</p>
+              <button class="task-run-button" type="button" onclick="runLab05Task10()">Запустити приклад</button>
+              <pre id="lab05-result-10" class="lab-result">Результат ще не сформовано.</pre>
+              <p class="task-file">Файл: <code>js/lab05_task10.js</code></p>
+            </section>
+
+            <section id="page-conclusion" class="tab-content" style="display: none">
+              <h2>Висновки</h2>
+              <p>У лабораторній роботі реалізовано колбеки, стрілочні функції, перетворення масивів, підрахунок даних через <code>reduce()</code>, перевірку дужок стеком, класи з приватними полями та арифметичний клас із ланцюжковими викликами.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2026 НОРЕНКО А. В. – Звіти лабораторних робіт з дисципліни "Проєктування WEB-застосувань"</p>
+        <p>Контакти: <a href="mailto:norenko.artem@gmail.com">norenko.artem@gmail.com</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/scripts.js" defer></script>
+  <script src="js/lab05_task01.js" defer></script>
+  <script src="js/lab05_task02.js" defer></script>
+  <script src="js/lab05_task03.js" defer></script>
+  <script src="js/lab05_task04.js" defer></script>
+  <script src="js/lab05_task05.js" defer></script>
+  <script src="js/lab05_task06.js" defer></script>
+  <script src="js/lab05_task07.js" defer></script>
+  <script src="js/lab05_task08.js" defer></script>
+  <script src="js/lab05_task09.js" defer></script>
+  <script src="js/lab05_task10.js" defer></script>
+</body>
+
+</html>

@@ -188,6 +188,402 @@ header {
   overflow-x: auto;
 }
 
+/* lab04 styles */
+.task-run-button {
+  border: 0;
+  border-radius: 5px;
+  padding: 11px 18px;
+  background-color: #616262;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.task-run-button:hover {
+  background-color: #2c2f33;
+  box-shadow: #616262 2px 2px 8px;
+}
+
+.task-file {
+  color: #555;
+  font-size: 14px;
+}
+
+.credential-note {
+  width: fit-content;
+  margin: 15px 0;
+  padding: 10px 14px;
+  border-left: 4px solid #616262;
+  background-color: #e8e9ea;
+}
+
+.registration-form {
+  display: grid;
+  max-width: 560px;
+  gap: 14px;
+}
+
+.registration-form label {
+  display: grid;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.registration-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #a0a0a1;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.registration-form input:focus {
+  border-color: #2c2f33;
+  outline: 2px solid #d3d4d5;
+}
+
+.registration-form .invalid-field {
+  border-color: #b3261e;
+}
+
+.field-error {
+  min-height: 17px;
+  color: #b3261e;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.form-result {
+  min-height: 20px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.form-success {
+  color: #16733b;
+}
+
+.form-failure {
+  color: #b3261e;
+}
+
+.lab-result {
+  min-height: 42px;
+  margin: 16px 0 8px;
+  padding: 14px;
+  border-left: 4px solid #616262;
+  border-radius: 4px;
+  background-color: #e8e9ea;
+  white-space: pre-wrap;
+}
+
+.lab-input-label {
+  display: grid;
+  max-width: 650px;
+  gap: 7px;
+  margin: 16px 0;
+  font-weight: 600;
+}
+
+.lab-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a0a0a1;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.lab-input:focus {
+  border-color: #2c2f33;
+  outline: 2px solid #d3d4d5;
+}
+
+.explanation-card {
+  margin: 16px 0;
+  padding: 14px 18px;
+  border-left: 4px solid #616262;
+  border-radius: 4px;
+  background-color: #e8e9ea;
+}
+
+.explanation-card h3 {
+  margin-top: 0;
+}
+
+.dom-demo {
+  max-width: 680px;
+  margin: 18px 0;
+  padding: 18px;
+  border: 1px solid #c4c5c6;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.inline-demo,
+.boxes-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.inline-demo .lab-input,
+.boxes-controls .lab-input {
+  max-width: 360px;
+}
+
+.demo-status {
+  font-weight: 600;
+  color: #444;
+}
+
+#place {
+  display: grid;
+  width: min(100%, 500px);
+  min-height: 150px;
+  place-items: center;
+  margin: 18px 0;
+  border: 2px solid #176b35;
+  border-radius: 6px;
+  background-color: #55b879;
+  color: #102d1b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#categories {
+  max-width: 650px;
+  padding: 0;
+  list-style: none;
+}
+
+#categories > .item {
+  margin-bottom: 12px;
+  padding: 10px 16px;
+  border: 1px solid #c4c5c6;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#categories h2 {
+  margin: 0 0 8px;
+}
+
+#boxes {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 60px;
+  margin-top: 16px;
+  padding: 12px;
+  overflow-x: auto;
+  border: 1px dashed #a0a0a1;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* lab07 styles */
+.lab07-panel {
+  max-width: 720px;
+  margin: 18px 0;
+  padding: 22px;
+  border: 1px solid #c4c5c6;
+  border-radius: 8px;
+  background: #e7edf4;
+}
+
+.lab07-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lab07-actions .lab-input {
+  max-width: 420px;
+}
+
+.lab07-timer {
+  display: flex;
+  gap: 28px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+.lab07-timer div {
+  display: grid;
+  min-width: 78px;
+  text-align: center;
+}
+
+.lab07-timer span {
+  color: #203a53;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.lab07-timer small {
+  text-transform: uppercase;
+}
+
+.lab07-textarea {
+  resize: vertical;
+}
+
+.lab07-fieldset {
+  display: grid;
+  gap: 12px;
+  margin: 14px 0;
+  border: 1px solid #a0a0a1;
+}
+
+.roller-gallery,
+.search-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.roller-card,
+.search-card {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+  padding: 0 0 12px;
+  overflow: hidden;
+  border: 1px solid #c4c5c6;
+  border-radius: 7px;
+  background: white;
+  color: #333;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.roller-card img,
+.search-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.roller-card span,
+.search-card span,
+.search-card small {
+  padding: 0 12px;
+}
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.gallery-modal[hidden] {
+  display: none;
+}
+
+.gallery-modal figure {
+  max-width: 1000px;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.gallery-modal img {
+  max-width: 100%;
+  max-height: 78vh;
+  border-radius: 8px;
+}
+
+.gallery-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 44px;
+  cursor: pointer;
+}
+
+.lab07-toast {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 3000;
+  max-width: 360px;
+  padding: 16px 22px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  color: #163224;
+  background: #b9edce;
+}
+
+.lab07-toast.error {
+  color: #5e1717;
+  background: #f5baba;
+}
+
+.lab07-loader {
+  width: 38px;
+  height: 38px;
+  margin: 22px auto;
+  border: 5px solid #d5d8db;
+  border-top-color: #2c2f33;
+  border-radius: 50%;
+  animation: lab07-spin 0.8s linear infinite;
+}
+
+.search-pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.search-pagination button {
+  padding: 8px 12px;
+  border: 1px solid #616262;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.search-pagination button.active {
+  background: #616262;
+  color: white;
+}
+
+@keyframes lab07-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 800px) {
+  .content-section {
+    display: block;
+  }
+
+  .left-side {
+    width: auto;
+    border-radius: 0;
+  }
+
+  .right-side {
+    border-radius: 0;
+  }
+}
+
 /*footer styles*/
 .footer {
   background-color: #2c2f33;

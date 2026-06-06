@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторна робота 4</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="top-bar">
+        <div class="header-container">
+          <h1 class="text">ЗВІТИ ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "Проєктування WEB-застосувань"</h1>
+        </div>
+      </div>
+
+      <div class="middle-bar">
+        <div class="header-container middle-row">
+          <div class="author-text">Виконавець: Студент групи ЗПІ-зп51 НОРЕНКО А. В.</div>
+          <div class="author-image">
+            <img src="src/pic1.jpg" alt="Фото виконавця" class="avatar" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <div class="header-container">
+          <nav class="menu">
+            <a href="index.html">Головна</a>
+            <a href="lab01.html">Лабораторна 1</a>
+            <a href="lab02.html">Лабораторна 2</a>
+            <a href="lab04.html" class="isActive">Лабораторна 4</a>
+            <a href="lab05.html">Лабораторна 5</a>
+            <a href="lab06.html">Лабораторна 6</a>
+            <a href="lab07.html">Лабораторна 7</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="content-section">
+        <div class="left-side">
+          <aside>
+            <nav class="left-nav">
+              <ul>
+                <li><a href="javascript:void(0)" onclick="showTab('page-topic')" class="isActive">Тема та мета</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-01')">Завдання 1. Число</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-02')">Завдання 2. Пора року</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-03')">Завдання 3. Авторизація</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-04')">Завдання 4. Дроїди</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-05')">Завдання 5. Перевірка спаму</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-06')">Завдання 6. Фільтр масиву</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-07')">Завдання 7. Масив і сортування</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-08')">Завдання 8. Двовимірний масив</a></li>
+                <li><a href="javascript:void(0)" onclick="showTab('task-09')">Завдання 9. Валідація форми</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+
+        <div class="right-side">
+          <div class="info" id="output">
+            <section id="page-topic" class="tab-content">
+              <h2>Тема та мета лабораторної роботи №4</h2>
+              <p><span class="span-title-bold">Тема:</span> Основи JavaScript: змінні, розгалуження, цикли, функції, масиви та валідація HTML-форми.</p>
+              <p><span class="span-title-bold">Мета:</span> Навчитися створювати окремі JavaScript-програми, працювати з введенням користувача, виконувати обчислення, обробляти масиви й перевіряти дані форми.</p>
+              <p>Для кожного завдання створено окремий файл <code>js/lab04_taskXX.js</code>. Результати виводяться через <code>alert()</code>, у Console браузера або безпосередньо на сторінці.</p>
+            </section>
+
+            <section id="task-01" class="tab-content" style="display: none">
+              <h2>Завдання 1. Перевірка введеного числа</h2>
+              <p>Зберегти введене через <code>prompt()</code> значення у змінну <code>value</code>, вивести його шаблонним рядком у Console та визначити, чи число додатне, від’ємне або дорівнює нулю.</p>
+              <button class="task-run-button" type="button" onclick="runTask01()">Запустити завдання 1</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task01.js</code></p>
+            </section>
+
+            <section id="task-02" class="tab-content" style="display: none">
+              <h2>Завдання 2. Визначення пори року</h2>
+              <p>Запитати число від 1 до 4 та за допомогою <code>switch-case</code> записати у <code>result</code> відповідну пору року. Передбачити гілку <code>default</code>.</p>
+              <button class="task-run-button" type="button" onclick="runTask02()">Запустити завдання 2</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task02.js</code></p>
+            </section>
+
+            <section id="task-03" class="tab-content" style="display: none">
+              <h2>Завдання 3. Авторизація Admin та User</h2>
+              <p>Запитати логін і пароль. Для користувачів <code>Admin</code> та <code>User</code> перевірити відповідні паролі, обробити скасування введення та невідомий логін.</p>
+              <div class="credential-note">
+                <strong>Тестові дані:</strong> Admin / admin123, User / user123
+              </div>
+              <button class="task-run-button" type="button" onclick="runTask03()">Запустити завдання 3</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task03.js</code></p>
+            </section>
+
+            <section id="task-04" class="tab-content" style="display: none">
+              <h2>Завдання 4. Станція продажу ремонтних дроїдів</h2>
+              <p>Функція <code>makeTransaction(quantity, pricePerDroid)</code> обчислює загальну вартість замовлення та повертає повідомлення про покупку.</p>
+              <button class="task-run-button" type="button" onclick="runTask04()">Запустити завдання 4</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task04.js</code></p>
+            </section>
+
+            <section id="task-05" class="tab-content" style="display: none">
+              <h2>Завдання 5. Перевірка повідомлення на спам</h2>
+              <p>Функція <code>checkForSpam(message)</code> без урахування регістру перевіряє наявність слів <code>spam</code> або <code>sale</code> та повертає булеве значення.</p>
+              <button class="task-run-button" type="button" onclick="runTask05()">Запустити завдання 5</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task05.js</code></p>
+            </section>
+
+            <section id="task-06" class="tab-content" style="display: none">
+              <h2>Завдання 6. Фільтрація масиву</h2>
+              <p>Функція <code>filterArray(numbers, value)</code> створює та повертає новий масив із числами, більшими за задане значення.</p>
+              <button class="task-run-button" type="button" onclick="runTask06()">Запустити завдання 6</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task06.js</code></p>
+            </section>
+
+            <section id="task-07" class="tab-content" style="display: none">
+              <h2>Завдання 7. Обробка та сортування масиву</h2>
+              <p>Створити масив заданого користувачем розміру, знайти максимальний парний елемент і мінімальний елемент із парним індексом, поміняти їх місцями та відсортувати результат методом вставки.</p>
+              <button class="task-run-button" type="button" onclick="runTask07()">Запустити завдання 7</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task07.js</code></p>
+            </section>
+
+            <section id="task-08" class="tab-content" style="display: none">
+              <h2>Завдання 8. Двовимірний масив</h2>
+              <p>Створити двовимірний масив випадкових чисел, сформувати окремі масиви додатних і від’ємних чисел та замінити третій додатний елемент введеним від’ємним значенням.</p>
+              <button class="task-run-button" type="button" onclick="runTask08()">Запустити завдання 8</button>
+              <p class="task-file">Файл програми: <code>js/lab04_task08.js</code></p>
+            </section>
+
+            <section id="task-09" class="tab-content" style="display: none">
+              <h2>Завдання 9. Валідація HTML-форми</h2>
+              <p>Форма перевіряє обов’язкові поля, ціле та дійсне числа, дату у форматі <code>DD.MM.YYYY</code> і однаковість паролів.</p>
+              <form id="registration-form" class="registration-form" novalidate>
+                <label>Ім’я *
+                  <input type="text" name="fullName" required />
+                  <small class="field-error"></small>
+                </label>
+                <label>Вік (ціле число) *
+                  <input type="text" name="age" required />
+                  <small class="field-error"></small>
+                </label>
+                <label>Середній бал (дійсне число) *
+                  <input type="text" name="rating" required />
+                  <small class="field-error"></small>
+                </label>
+                <label>Дата народження (DD.MM.YYYY) *
+                  <input type="text" name="birthDate" placeholder="31.12.2000" required />
+                  <small class="field-error"></small>
+                </label>
+                <label>Пароль *
+                  <input type="password" name="password" required />
+                  <small class="field-error"></small>
+                </label>
+                <label>Повторіть пароль *
+                  <input type="password" name="confirmPassword" required />
+                  <small class="field-error"></small>
+                </label>
+                <button class="task-run-button" type="submit">Зареєструватися</button>
+                <p id="form-result" class="form-result" aria-live="polite"></p>
+              </form>
+              <p class="task-file">Файл програми: <code>js/lab04_task09.js</code></p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2026 НОРЕНКО А. В. – Звіти лабораторних робіт з дисципліни "Проєктування WEB-застосувань"</p>
+        <p>Контакти: <a href="mailto:norenko.artem@gmail.com">norenko.artem@gmail.com</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/scripts.js" defer></script>
+  <script src="js/lab04_task01.js" defer></script>
+  <script src="js/lab04_task02.js" defer></script>
+  <script src="js/lab04_task03.js" defer></script>
+  <script src="js/lab04_task04.js" defer></script>
+  <script src="js/lab04_task05.js" defer></script>
+  <script src="js/lab04_task06.js" defer></script>
+  <script src="js/lab04_task07.js" defer></script>
+  <script src="js/lab04_task08.js" defer></script>
+  <script src="js/lab04_task09.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "preview": "src/lab07/roller-riverside.png",
+    "original": "src/lab07/roller-riverside.png",
+    "description": "Швидкий заїзд ролера на міській набережній",
+    "tags": "ролики місто набережна захід сонця",
+    "likes": 128,
+    "views": 930
+  },
+  {
+    "preview": "src/lab07/roller-friends.png",
+    "original": "src/lab07/roller-friends.png",
+    "description": "Друзі катаються на роликах у зеленому парку",
+    "tags": "ролики друзі парк активний відпочинок",
+    "likes": 214,
+    "views": 1450
+  },
+  {
+    "preview": "src/lab07/roller-skatepark.png",
+    "original": "src/lab07/roller-skatepark.png",
+    "description": "Тренування ролерки в сучасному скейтпарку",
+    "tags": "ролики скейтпарк стрибок спорт",
+    "likes": 176,
+    "views": 1120
+  },
+  {
+    "preview": "src/lab07/roller-riverside.png",
+    "original": "src/lab07/roller-riverside.png",
+    "description": "Вечірній ролер-маршрут уздовж річки",
+    "tags": "ролики місто річка маршрут",
+    "likes": 158,
+    "views": 1180
+  },
+  {
+    "preview": "src/lab07/roller-friends.png",
+    "original": "src/lab07/roller-friends.png",
+    "description": "Командна прогулянка на роликах",
+    "tags": "ролики команда друзі парк",
+    "likes": 244,
+    "views": 1700
+  },
+  {
+    "preview": "src/lab07/roller-skatepark.png",
+    "original": "src/lab07/roller-skatepark.png",
+    "description": "Спортивний стрибок у скейтпарку",
+    "tags": "ролики трюк скейтпарк спорт",
+    "likes": 206,
+    "views": 1370
+  }
+]

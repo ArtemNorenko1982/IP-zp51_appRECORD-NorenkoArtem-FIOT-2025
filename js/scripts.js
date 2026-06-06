@@ -11,3 +11,14 @@
         function navMenuClickItem(event) {
             event.preventDefault();
         }
+
+        function showLab05Result(elementId, value) {
+            const element = document.getElementById(elementId);
+            if (!element) {
+                return;
+            }
+
+            element.textContent = typeof value === 'string'
+                ? value
+                : JSON.stringify(value, null, 2);
+        }
