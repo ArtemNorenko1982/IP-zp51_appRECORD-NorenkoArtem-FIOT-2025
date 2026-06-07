@@ -16,5 +16,6 @@ function runLab05Task03() {
   console.log('Original fruits:', fruits);
   const discountedFruits = applyFruitDiscount(fruits);
   console.log('Discounted fruits:', discountedFruits);
+
   showLab05Result('lab05-result-03', discountedFruits);
 }
